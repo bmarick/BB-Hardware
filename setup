@@ -1,0 +1,75 @@
+#!/bin/bash
+
+echo Setting up Hardware
+
+# Setting up short cuts
+export SLOTS=/sys/devices/bone_capemgr.7/slots
+echo \ \  Setting SLOTS = $SLOTS
+export PINS=/sys/kernel/debug/pinctrl/44e10800.pinmux/pins
+echo \ \  Setting PINS = $PINS
+
+echo \ 
+echo \ \  Setting up cap
+echo \ \ \ \  Current caps
+cat $SLOTS
+echo \ \ \ \  Current pins
+cat $PINS|grep 890
+cat $PINS|grep 894
+cat $PINS|grep 89c
+cat $PINS|grep 898
+cat $PINS|grep 834
+cat $PINS|grep 830
+cat $PINS|grep 824
+cat $PINS|grep 828
+cat $PINS|grep 83c
+cat $PINS|grep 838
+cat $PINS|grep 82c
+cat $PINS|grep 88c
+
+echo \ 
+echo \ \  Applying cap
+# cd /lib/firmware
+# echo SSC-GPIO > $SLOTS
+echo \ \ \ \  Current caps
+cat $SLOTS
+echo \ \ \ \  Current pins
+cat $PINS|grep 890
+cat $PINS|grep 894
+cat $PINS|grep 89c
+cat $PINS|grep 898
+cat $PINS|grep 834
+cat $PINS|grep 830
+cat $PINS|grep 824
+cat $PINS|grep 828
+cat $PINS|grep 83c
+cat $PINS|grep 838
+cat $PINS|grep 82c
+cat $PINS|grep 88c
+
+echo \ 
+echo \ \  Changing to Outputs
+cd /sys/class/gpio/
+echo 36 > export
+echo "out" > gpio36/direction
+echo 37 > export
+echo "out" > gpio37/direction
+echo 39 > export
+echo "out" > gpio39/direction
+echo 38 > export
+echo "out" > gpio38/direction
+echo 13 > export
+echo "out" > gpio13/direction
+echo 12 > export
+echo "out" > gpio12/direction
+echo 9 > export
+echo "out" > gpio9/direction
+echo 10 > export
+echo "out" > gpio10/direction
+echo 15 > export
+echo "out" > gpio15/direction
+echo 14 > export
+echo "out" > gpio14/direction
+echo 11 > export
+echo "out" > gpio11/direction
+echo 35 > export
+echo "out" > gpio35/direction
