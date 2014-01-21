@@ -28,8 +28,8 @@ cat $PINS|grep 88c
 
 echo \ 
 echo \ \  Applying cap
-# cd /lib/firmware
-# echo SSC-GPIO > $SLOTS
+cd /lib/firmware
+echo SSC-GPIO > $SLOTS
 echo \ \ \ \  Current caps
 cat $SLOTS
 echo \ \ \ \  Current pins
@@ -49,27 +49,27 @@ cat $PINS|grep 88c
 echo \ 
 echo \ \  Changing to Outputs
 cd /sys/class/gpio/
-echo 36 > export
-echo "out" > gpio36/direction
-echo 37 > export
-echo "out" > gpio37/direction
-echo 39 > export
-echo "out" > gpio39/direction
-echo 38 > export
-echo "out" > gpio38/direction
-echo 13 > export
-echo "out" > gpio13/direction
-echo 12 > export
-echo "out" > gpio12/direction
-echo 9 > export
-echo "out" > gpio9/direction
-echo 10 > export
-echo "out" > gpio10/direction
-echo 15 > export
-echo "out" > gpio15/direction
-echo 14 > export
-echo "out" > gpio14/direction
-echo 11 > export
-echo "out" > gpio11/direction
-echo 35 > export
-echo "out" > gpio35/direction
+echo 66 > export
+echo "out" > gpio66/direction
+echo 67 > export
+echo "out" > gpio67/direction
+echo 69 > export
+echo "out" > gpio69/direction
+echo 68 > export
+echo "out" > gpio68/direction
+echo 45 > export
+echo "out" > gpio45/direction
+echo 44 > export
+echo "out" > gpio44/direction
+echo 23 > export
+echo "out" > gpio23/direction
+echo 26 > export
+echo "out" > gpio26/direction
+echo 47 > export
+echo "out" > gpio47/direction
+echo 46 > export
+echo "out" > gpio46/direction
+echo 27 > export
+echo "out" > gpio27/direction
+echo 65 > export
+echo "out" > gpio65/direction

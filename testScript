@@ -1,0 +1,43 @@
+#!/bin/bash
+
+echo Setting up Hardware
+
+echo \ 
+echo \ \  Changing to Outputs
+cd /sys/class/gpio/
+echo 1 > gpio66/value
+sleep 3
+echo 0 > gpio66/value
+echo 1 > gpio67/value
+sleep 3
+echo 0 > gpio67/value
+echo 1 > gpio69/value
+sleep 3
+echo 0 > gpio69/value
+echo 1 > gpio68/value
+sleep 3
+echo 0 > gpio68/value
+echo 1 > gpio45/value
+sleep 3
+echo 0 > gpio45/value
+echo 1 > gpio44/value
+sleep 3
+echo 0 > gpio44/value
+echo 1 > gpio23/value
+sleep 3
+echo 0 > gpio23/value
+echo 1 > gpio26/value
+sleep 3
+echo 0 > gpio26/value
+echo 1 > gpio47/value
+sleep 3
+echo 0 > gpio47/value
+echo 1 > gpio46/value
+sleep 3
+echo 0 > gpio46/value
+echo 1 > gpio27/value
+sleep 3
+echo 0 > gpio27/value
+echo 1 > gpio65/value
+sleep 3
+echo 0 > gpio65/value

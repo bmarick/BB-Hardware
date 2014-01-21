@@ -28,8 +28,6 @@
              __overlay__ {
                   pinctrl_test: SSC_GPIO_Pins {
 			pinctrl-single,pins = <
-
-				0x078 0x07  /* P9_12 60 OUTPUT MODE7 - The LED Output */
 								
 				0x090 0x07  /* P8_07 66 OUTPUT MODE7 */
 				0x094 0x07  /* P8_08 67 OUTPUT MODE7 */
