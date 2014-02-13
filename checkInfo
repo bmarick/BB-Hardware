@@ -3,7 +3,7 @@
 echo Setting up Hardware
 
 # Setting up short cuts
-export SLOTS=/sys/devices/bone_capemgr.7/slots
+export SLOTS=/sys/devices/bone_capemgr.8/slots
 echo \ \  Setting SLOTS = $SLOTS
 export PINS=/sys/kernel/debug/pinctrl/44e10800.pinmux/pins
 echo \ \  Setting PINS = $PINS
